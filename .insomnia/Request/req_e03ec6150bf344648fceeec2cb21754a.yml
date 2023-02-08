@@ -1,11 +1,36 @@
 _id: req_e03ec6150bf344648fceeec2cb21754a
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675868970690
+modified: 1675869227518
 created: 1675868796791
 url: "{{ _.DOMAIN }}/api/v4/document/types"
 name: Get Document Types
-description: ""
+description: |-
+  Example response
+  ```json
+  [
+  	{
+  		"id": 1,
+  		"code": "CI",
+  		"name": "Identity card"
+  	},
+  	{
+  		"id": 2,
+  		"code": "DNI",
+  		"name": "National ID card"
+  	},
+  	{
+  		"id": 3,
+  		"code": "PSP",
+  		"name": "Passport"
+  	},
+  	{
+  		"id": 4,
+  		"code": "Other",
+  		"name": "Other"
+  	}
+  ]
+  ```
 method: GET
 body: {}
 parameters: []
