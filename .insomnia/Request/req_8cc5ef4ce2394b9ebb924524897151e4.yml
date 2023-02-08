@@ -1,0 +1,21 @@
+_id: req_8cc5ef4ce2394b9ebb924524897151e4
+type: Request
+parentId: fld_d374a29076a34af3bc4bdba7f360d74b
+modified: 1675868728040
+created: 1675868719233
+url: "{{ _.DOMAIN }}/api/v4/countries"
+name: Get Countries
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1675868719233
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

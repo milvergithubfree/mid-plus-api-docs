@@ -1,0 +1,14 @@
+_id: env_1966af21bb2b44c198874d51f8911ad9
+type: Environment
+parentId: env_4753eadf24641f2ef086def9ac223f31d5c4db2b
+modified: 1675868120616
+created: 1675868087394
+name: development
+data:
+  DOMAIN: https://midplus.interfase.uy
+dataPropertyOrder:
+  "&":
+    - DOMAIN
+color: "#00ffaa"
+isPrivate: false
+metaSortKey: 1675868087394
