@@ -1,17 +1,17 @@
-_id: req_8cc5ef4ce2394b9ebb924524897151e4
+_id: req_51ec8b14abab4871bbc9ff50c997a035
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675868816268
-created: 1675868719233
-url: "{{ _.DOMAIN }}/api/v4/countries"
-name: Get Countries
+modified: 1675868967603
+created: 1675868955791
+url: "{{ _.DOMAIN }}/api/v4/genders"
+name: Get Genders
 description: ""
 method: GET
 body: {}
 parameters: []
 headers: []
 authentication: {}
-metaSortKey: -1675868796741
+metaSortKey: -1675868796691
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

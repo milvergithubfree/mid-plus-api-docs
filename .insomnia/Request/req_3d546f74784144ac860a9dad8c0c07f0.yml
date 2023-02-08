@@ -1,0 +1,28 @@
+_id: req_3d546f74784144ac860a9dad8c0c07f0
+type: Request
+parentId: fld_d374a29076a34af3bc4bdba7f360d74b
+modified: 1675869028775
+created: 1675868996281
+url: "{{ _.DOMAIN }}/api/v4/current/step/"
+name: Get Current Step
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "testing@gmail.com"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1675868796641
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

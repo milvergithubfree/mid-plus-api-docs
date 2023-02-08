@@ -1,17 +1,17 @@
-_id: req_8cc5ef4ce2394b9ebb924524897151e4
+_id: req_b235fcf37a8849499c815bb4617d9923
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675868816268
-created: 1675868719233
-url: "{{ _.DOMAIN }}/api/v4/countries"
-name: Get Countries
+modified: 1675869069154
+created: 1675869053648
+url: "{{ _.DOMAIN }}/api/v4/propose/trips"
+name: Get Propose of Trips
 description: ""
 method: GET
 body: {}
 parameters: []
 headers: []
 authentication: {}
-metaSortKey: -1675868796741
+metaSortKey: -1675868796666
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

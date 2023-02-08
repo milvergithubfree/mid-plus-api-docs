@@ -1,17 +1,17 @@
-_id: req_8cc5ef4ce2394b9ebb924524897151e4
+_id: req_e03ec6150bf344648fceeec2cb21754a
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675868816268
-created: 1675868719233
-url: "{{ _.DOMAIN }}/api/v4/countries"
-name: Get Countries
+modified: 1675868970690
+created: 1675868796791
+url: "{{ _.DOMAIN }}/api/v4/document/types"
+name: Get Document Types
 description: ""
 method: GET
 body: {}
 parameters: []
 headers: []
 authentication: {}
-metaSortKey: -1675868796741
+metaSortKey: -1675868796716
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
