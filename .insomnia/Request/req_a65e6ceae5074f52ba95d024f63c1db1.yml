@@ -1,15 +1,20 @@
-_id: req_3d546f74784144ac860a9dad8c0c07f0
+_id: req_a65e6ceae5074f52ba95d024f63c1db1
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675911540778
-created: 1675868996281
-url: "{{ _.DOMAIN }}/api/v4/current/step/"
-name: Get Current Step
+modified: 1675912763159
+created: 1675910809340
+url: "{{ _.DOMAIN }}/api/v4/paymentInfo"
+name: Payment Info Step
 description: |
   Example of Request
   ```json
   {
-  	"email": "testing@gmail.com"
+  	"journeyId": "b5c91b42-b45e-4c58-9293-e49360de5e94",
+  	"subscriptionId": "8767",
+  	"amount": "200",
+  	"entity": "paypal",
+  	"currency": "USD",
+  	"status": "PAID"
   }
   ```
 
@@ -25,16 +30,21 @@ description: |
 method: POST
 body:
   mimeType: application/json
-  text: |-
+  text: >-
     {
-    	"email": "testingapp@gmail.com"
+    	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5pZA==::46b', 'never', 60 %}",
+    	"subscriptionId": "8767",
+    	"amount": "200",
+    	"entity": "paypal",
+    	"currency": "USD",
+    	"status": "PAID"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
 authentication: {}
-metaSortKey: -1675868796641
+metaSortKey: -1675828889413
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
