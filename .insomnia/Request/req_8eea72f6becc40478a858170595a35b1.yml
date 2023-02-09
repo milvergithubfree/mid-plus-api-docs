@@ -1,11 +1,35 @@
 _id: req_8eea72f6becc40478a858170595a35b1
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675869097955
+modified: 1675913648515
 created: 1675869084297
 url: "{{ _.DOMAIN }}/api/v4/mode/entries"
 name: get Mode of Entries
-description: ""
+description: |-
+  ```json
+  [
+  	{
+  		"id": 1,
+  		"name": "Air"
+  	},
+  	{
+  		"id": 2,
+  		"name": "Sea"
+  	},
+  	{
+  		"id": 3,
+  		"name": "Land"
+  	},
+  	{
+  		"id": 4,
+  		"name": "Land (By own means)"
+  	},
+  	{
+  		"id": 5,
+  		"name": "Other"
+  	}
+  ]
+  ```
 method: GET
 body: {}
 parameters: []

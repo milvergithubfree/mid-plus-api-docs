@@ -1,31 +1,71 @@
 _id: req_10376b7ad5ad4a04ad9fafd86a5a7055
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675913443638
+modified: 1675913571359
 created: 1675913268821
 url: "{{ _.DOMAIN }}/api/v4/personalData"
 name: Personal Data Step
-description: |
+description: >
   Example of Request
+
   ```json
+
   {
-  	"journeyId": "b5c91b42-b45e-4c58-9293-e49360de5e94",
-  	"subscriptionId": "8767",
-  	"amount": "200",
-  	"entity": "paypal",
-  	"currency": "USD",
-  	"status": "PAID"
+  	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5pZA==::46b', 'never', 60 %}",
+  	"givenName": "givenName",
+  	"nationality": "BO",
+  	"docNumber": "4563345",
+  	"dateOfBirth": "2000-09-09",
+  	"dateOfExpire": "2026-09-09",
+  	"mrz": "<-wfsdffdgdfgfdgkfughdfkgfduhg",
+  	"docType": "P",
+  	"docFrontImage": "base64Image",
+  	"docBackImage": "base64Image",
+  	"photoImage": "base64Image",
+  	"gender": "M",
+  	"nationalId": ""
   }
+
   ```
+
 
   Example of Response
 
+
   ```json
+
   {
-  	"id": "b5c91b42-b45e-4c58-9293-e49360de5e94",
-  	"email": "testing@gmail.com",
-  	"stepStatus": "PAYMENT_INFO"
+  	"journeyId": {
+  		"id": "178acc40-31ae-4610-ac50-813500bb6bcd",
+  		"email": "testingapp@gmail.com",
+  		"stepStatus": "TRIP"
+  	},
+  	"paymentInfo": {
+  		"journeyId": null,
+  		"subscriptionId": null,
+  		"amount": null,
+  		"entity": null,
+  		"currency": null,
+  		"status": null
+  	},
+  	"personalData": {
+  		"journeyId": "178acc40-31ae-4610-ac50-813500bb6bcd",
+  		"surname": null,
+  		"givenName": "givenName",
+  		"nationality": "BO",
+  		"docNumber": "4563345",
+  		"dateOfBirth": "2000-09-09",
+  		"dateOfExpire": "2026-09-09",
+  		"mrz": "<-wfsdffdgdfgfdgkfughdfkgfduhg",
+  		"docType": "P",
+  		"docFrontImage": "base64Image",
+  		"docBackImage": "base64Image",
+  		"photoImage": "base64Image",
+  		"gender": "M",
+  		"nationalId": ""
+  	}
   }
+
   ```
 method: POST
 body:

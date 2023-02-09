@@ -1,11 +1,30 @@
 _id: req_51ec8b14abab4871bbc9ff50c997a035
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675868967603
+modified: 1675913684723
 created: 1675868955791
 url: "{{ _.DOMAIN }}/api/v4/genders"
 name: Get Genders
-description: ""
+description: |-
+  ```json
+  [
+  	{
+  		"id": 1,
+  		"code": "M",
+  		"name": "Male"
+  	},
+  	{
+  		"id": 2,
+  		"code": "F",
+  		"name": "Female"
+  	},
+  	{
+  		"id": 3,
+  		"code": "O",
+  		"name": "Other"
+  	}
+  ]
+  ```
 method: GET
 body: {}
 parameters: []
