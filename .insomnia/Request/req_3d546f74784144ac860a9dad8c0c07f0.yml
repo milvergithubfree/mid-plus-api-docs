@@ -1,33 +1,64 @@
 _id: req_3d546f74784144ac860a9dad8c0c07f0
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675911540778
+modified: 1676036452751
 created: 1675868996281
 url: "{{ _.DOMAIN }}/api/v4/current/step/"
 name: Get Current Step
 description: |
   Example of Request
+  mode is Optional when it is not sent default value is CREATE
+
+  CREATE: create a new id becames journeyId
+  RECOVERY: list 20 last journey ids 
   ```json
   {
-  	"email": "testing@gmail.com"
+  	"email": "testing@gmail.com",
+  	"mode": "CREATE"
   }
   ```
 
   Example of Response
 
   ```json
-  {
-  	"id": "b5c91b42-b45e-4c58-9293-e49360de5e94",
-  	"email": "testing@gmail.com",
-  	"stepStatus": "PAYMENT_INFO"
-  }
+  [
+  	{
+  		"id": "87200d01-6336-4bac-9978-2985b6137b4a",
+  		"email": "testing@gmail.com",
+  		"stepStatus": "PAYMENT_INFO",
+  		"createdTime": "2023-02-09T21:01:15.265835",
+  		"lastModifiedTime": "2023-02-09T21:01:15.265835"
+  	},
+  	{
+  		"id": "d8ef092f-d7d5-4d55-9f44-b312b5763b86",
+  		"email": "testing@gmail.com",
+  		"stepStatus": "TRIP",
+  		"createdTime": "2023-02-09T20:44:31",
+  		"lastModifiedTime": "2023-02-09T20:51:29"
+  	},
+  	{
+  		"id": "de4055fe-f0a3-4eb0-993a-8453b7083dc5",
+  		"email": "testing@gmail.com",
+  		"stepStatus": "PAYMENT_INFO",
+  		"createdTime": "2023-02-09T20:32:11",
+  		"lastModifiedTime": "2023-02-09T20:32:11"
+  	},
+  	{
+  		"id": "6af559f3-2100-4a58-b048-911d356e5f93",
+  		"email": "testing@gmail.com",
+  		"stepStatus": "TRIP",
+  		"createdTime": "2023-02-09T20:30:51",
+  		"lastModifiedTime": "2023-02-09T20:31:37"
+  	}
+  ]
   ```
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"email": "testingapp@gmail.com"
+    	"email": "testing@gmail.com",
+    	"mode": "RECOVERY"
     }
 parameters: []
 headers:
