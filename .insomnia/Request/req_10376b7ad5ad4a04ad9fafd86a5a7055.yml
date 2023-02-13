@@ -1,7 +1,7 @@
 _id: req_10376b7ad5ad4a04ad9fafd86a5a7055
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1675988148987
+modified: 1676330636315
 created: 1675913268821
 url: "{{ _.DOMAIN }}/api/v4/personalData"
 name: Personal Data Step
@@ -74,17 +74,18 @@ body:
     {
     	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60 %}",
     	"givenName": "givenName",
-    	"nationality": "BO",
+    	"surname": "surname",
+    	"nationality": "BOL",
     	"docNumber": "4563345",
     	"dateOfBirth": "2000-09-09",
     	"dateOfExpire": "2026-09-09",
     	"mrz": "<-wfsdffdgdfgfdgkfughdfkgfduhg",
-    	"docType": "P",
+    	"docType": "PSP",
     	"docFrontImage": "base64Image",
     	"docBackImage": "base64Image",
     	"photoImage": "base64Image",
     	"gender": "M",
-    	"nationalId": ""
+    	"nationalId": "123456"
     }
 parameters: []
 headers:
