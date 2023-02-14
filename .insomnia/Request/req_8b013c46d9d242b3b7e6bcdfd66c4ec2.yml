@@ -1,12 +1,12 @@
-_id: req_782cdeb4c4cd473e9f9d8f78ead8e38a
+_id: req_8b013c46d9d242b3b7e6bcdfd66c4ec2
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1676416535633
-created: 1676330064067
-url: "{{ _.DOMAIN }}/api/v4/journeys/step/{% response 'body',
+modified: 1676418776177
+created: 1676416807416
+url: "{{ _.DOMAIN }}/api/v4/journeys/{% response 'body',
   'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60
   %}"
-name: Get Journey by uuid
+name: Get Travels by Journey Id
 description: >
   Example of Request
 
@@ -74,7 +74,7 @@ body: {}
 parameters: []
 headers: []
 authentication: {}
-metaSortKey: -1675793970588.5
+metaSortKey: -1675791476386.75
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

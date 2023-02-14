@@ -1,12 +1,10 @@
-_id: req_782cdeb4c4cd473e9f9d8f78ead8e38a
+_id: req_40b92e65df9545c0a328e5385d457f0e
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1676416535633
-created: 1676330064067
-url: "{{ _.DOMAIN }}/api/v4/journeys/step/{% response 'body',
-  'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60
-  %}"
-name: Get Journey by uuid
+modified: 1676417803205
+created: 1676417274310
+url: "{{ _.DOMAIN }}/api/v4/journeys/"
+name: Create Travel
 description: >
   Example of Request
 
@@ -69,12 +67,33 @@ description: >
   }
 
   ```
-method: GET
-body: {}
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60 %}",
+    	"travelDate": "2023-05-05T22:00:00",
+    	"tripNumber": "AWL-34567",
+    	"countryOfOrigin": {
+    		"id": "1",
+    		"code": "BO",
+    		"code3": "BOL",
+    		"name": "Bolivia"
+    	},
+    	"countryOfDestination": {
+    		"id": "2",
+    		"code": "AR",
+    		"code3": "ARG",
+    		"name": "Argentina"
+    	}
+    }
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
 authentication: {}
-metaSortKey: -1675793970588.5
+metaSortKey: -1675792723487.625
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
