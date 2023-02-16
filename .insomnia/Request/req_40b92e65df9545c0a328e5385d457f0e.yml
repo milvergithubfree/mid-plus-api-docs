@@ -1,7 +1,7 @@
 _id: req_40b92e65df9545c0a328e5385d457f0e
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1676420385951
+modified: 1676549201502
 created: 1676417274310
 url: "{{ _.DOMAIN }}/api/v4/journeys/"
 name: Create Travel
@@ -11,58 +11,20 @@ description: >
   ```json
 
   {
-  	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5pZA==::46b', 'never', 60 %}",
-  	"givenName": "givenName",
-  	"nationality": "BO",
-  	"docNumber": "4563345",
-  	"dateOfBirth": "2000-09-09",
-  	"dateOfExpire": "2026-09-09",
-  	"mrz": "<-wfsdffdgdfgfdgkfughdfkgfduhg",
-  	"docType": "P",
-  	"docFrontImage": "base64Image",
-  	"docBackImage": "base64Image",
-  	"photoImage": "base64Image",
-  	"gender": "M",
-  	"nationalId": ""
-  }
-
-  ```
-
-
-  Example of Response
-
-
-  ```json
-
-  {
-  	"journeyId": {
-  		"id": "178acc40-31ae-4610-ac50-813500bb6bcd",
-  		"email": "testingapp@gmail.com",
-  		"stepStatus": "TRIP"
+  	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60 %}",
+  	"travelDate": "2023-05-05T22:00:00",
+  	"tripNumber": "AWL-34567",
+  	"countryOfOrigin": {
+  		"id": 2,
+  		"code": "AI",
+  		"code3": "AIA",
+  		"name": "Anguila"
   	},
-  	"paymentInfo": {
-  		"journeyId": null,
-  		"subscriptionId": null,
-  		"amount": null,
-  		"entity": null,
-  		"currency": null,
-  		"status": null
-  	},
-  	"personalData": {
-  		"journeyId": "178acc40-31ae-4610-ac50-813500bb6bcd",
-  		"surname": null,
-  		"givenName": "givenName",
-  		"nationality": "BO",
-  		"docNumber": "4563345",
-  		"dateOfBirth": "2000-09-09",
-  		"dateOfExpire": "2026-09-09",
-  		"mrz": "<-wfsdffdgdfgfdgkfughdfkgfduhg",
-  		"docType": "P",
-  		"docFrontImage": "base64Image",
-  		"docBackImage": "base64Image",
-  		"photoImage": "base64Image",
-  		"gender": "M",
-  		"nationalId": ""
+  	"countryOfDestination": {
+  		"id": 1,
+  		"code": "AR",
+  		"code3": "ARG",
+  		"name": "Argentina"
   	}
   }
 
@@ -76,13 +38,13 @@ body:
     	"travelDate": "2023-05-05T22:00:00",
     	"tripNumber": "AWL-34567",
     	"countryOfOrigin": {
-    		"id": 258,
+    		"id": 2,
     		"code": "AI",
     		"code3": "AIA",
     		"name": "Anguila"
     	},
     	"countryOfDestination": {
-    		"id": 261,
+    		"id": 1,
     		"code": "AR",
     		"code3": "ARG",
     		"name": "Argentina"

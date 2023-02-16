@@ -1,74 +1,20 @@
 _id: req_782cdeb4c4cd473e9f9d8f78ead8e38a
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1676416535633
+modified: 1676549241599
 created: 1676330064067
 url: "{{ _.DOMAIN }}/api/v4/journeys/step/{% response 'body',
   'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60
   %}"
 name: Get Journey by uuid
-description: >
-  Example of Request
-
-  ```json
-
-  {
-  	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5pZA==::46b', 'never', 60 %}",
-  	"givenName": "givenName",
-  	"nationality": "BO",
-  	"docNumber": "4563345",
-  	"dateOfBirth": "2000-09-09",
-  	"dateOfExpire": "2026-09-09",
-  	"mrz": "<-wfsdffdgdfgfdgkfughdfkgfduhg",
-  	"docType": "P",
-  	"docFrontImage": "base64Image",
-  	"docBackImage": "base64Image",
-  	"photoImage": "base64Image",
-  	"gender": "M",
-  	"nationalId": ""
-  }
-
-  ```
+description: >-
+  {{ _.DOMAIN }}/api/v4/journeys/step/{journeyId}
 
 
-  Example of Response
+  Example:
 
 
-  ```json
-
-  {
-  	"journeyId": {
-  		"id": "178acc40-31ae-4610-ac50-813500bb6bcd",
-  		"email": "testingapp@gmail.com",
-  		"stepStatus": "TRIP"
-  	},
-  	"paymentInfo": {
-  		"journeyId": null,
-  		"subscriptionId": null,
-  		"amount": null,
-  		"entity": null,
-  		"currency": null,
-  		"status": null
-  	},
-  	"personalData": {
-  		"journeyId": "178acc40-31ae-4610-ac50-813500bb6bcd",
-  		"surname": null,
-  		"givenName": "givenName",
-  		"nationality": "BO",
-  		"docNumber": "4563345",
-  		"dateOfBirth": "2000-09-09",
-  		"dateOfExpire": "2026-09-09",
-  		"mrz": "<-wfsdffdgdfgfdgkfughdfkgfduhg",
-  		"docType": "P",
-  		"docFrontImage": "base64Image",
-  		"docBackImage": "base64Image",
-  		"photoImage": "base64Image",
-  		"gender": "M",
-  		"nationalId": ""
-  	}
-  }
-
-  ```
+  {{ _.DOMAIN }}/api/v4/journeys/step/{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60 %}
 method: GET
 body: {}
 parameters: []

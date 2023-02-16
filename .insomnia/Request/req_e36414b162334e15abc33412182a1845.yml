@@ -1,0 +1,26 @@
+_id: req_e36414b162334e15abc33412182a1845
+type: Request
+parentId: fld_d374a29076a34af3bc4bdba7f360d74b
+modified: 1676549110553
+created: 1676486362040
+url: "{{ _.DOMAIN }}/api/v4/account/testingapp@gmail.com"
+name: Delete Journey IDs by email
+description: |-
+  {{ _.DOMAIN }}/api/v4/account/{email}
+
+  Example:
+
+  {{ _.DOMAIN }}/api/v4/account/testingapp@gmail.com
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1675790229285.875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

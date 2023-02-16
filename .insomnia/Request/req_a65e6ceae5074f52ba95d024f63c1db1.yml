@@ -1,7 +1,7 @@
 _id: req_a65e6ceae5074f52ba95d024f63c1db1
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1676330918034
+modified: 1676546100547
 created: 1675910809340
 url: "{{ _.DOMAIN }}/api/v4/paymentInfo"
 name: Payment Info Step
@@ -45,7 +45,7 @@ body:
     {
     	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60 %}",
     	"subscriptionId": "8767",
-    	"amount": "6400",
+    	"amount": "5400",
     	"entity": "paypal",
     	"currency": "USD",
     	"status": "PAID"
