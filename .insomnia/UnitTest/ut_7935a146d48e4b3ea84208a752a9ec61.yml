@@ -1,0 +1,10 @@
+_id: ut_7935a146d48e4b3ea84208a752a9ec61
+type: UnitTest
+parentId: uts_a91bc827421d40f8ae6e1b80bef5124e
+modified: 1677530865729
+created: 1677530765944
+requestId: req_8cc5ef4ce2394b9ebb924524897151e4
+name: fetch countries
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

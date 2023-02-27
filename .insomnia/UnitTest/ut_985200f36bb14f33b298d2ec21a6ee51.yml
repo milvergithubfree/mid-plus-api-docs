@@ -1,0 +1,10 @@
+_id: ut_985200f36bb14f33b298d2ec21a6ee51
+type: UnitTest
+parentId: uts_a91bc827421d40f8ae6e1b80bef5124e
+modified: 1677530856035
+created: 1677530851628
+requestId: req_51ec8b14abab4871bbc9ff50c997a035
+name: fetch genders
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

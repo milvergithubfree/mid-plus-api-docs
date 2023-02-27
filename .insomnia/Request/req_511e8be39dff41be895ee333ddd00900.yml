@@ -1,10 +1,10 @@
-_id: req_40b92e65df9545c0a328e5385d457f0e
+_id: req_511e8be39dff41be895ee333ddd00900
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1676549672230
-created: 1676417274310
-url: "{{ _.DOMAIN }}/api/v4/journeys/"
-name: Create Travel
+modified: 1677530593520
+created: 1677530087454
+url: "{{ _.DOMAIN }}/api/v4/immigrations/"
+name: Create Immigration Document
 description: >
   Example of Request
 
@@ -34,28 +34,16 @@ body:
   mimeType: application/json
   text: >-
     {
-    	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60 %}",
-    	"travelDate": "2023-05-05T22:00:00",
-    	"tripNumber": "AWL-34567",
-    	"countryOfOrigin": {
-    		"id": 258,
-    		"code": "AI",
-    		"code3": "AIA",
-    		"name": "Anguila"
-    	},
-    	"countryOfDestination": {
-    		"id": 261,
-    		"code": "AR",
-    		"code3": "ARG",
-    		"name": "Argentina"
-    	}
+    	"citizenId": "{% response 'body', 'req_10376b7ad5ad4a04ad9fafd86a5a7055', 'b64::JC5wZXJzb25hbERhdGEuaWQ=::46b', 'never', 60 %}",
+    	"propose": {% response 'body', 'req_b235fcf37a8849499c815bb4617d9923', 'b64::JC5bMF0=::46b', 'never', 60 %},
+    	"countryOfResidence": {% response 'body', 'req_8cc5ef4ce2394b9ebb924524897151e4', 'b64::JC5bMF0=::46b', 'never', 60 %}
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
 authentication: {}
-metaSortKey: -1675792723487.625
+metaSortKey: -1675790852836.3125
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
