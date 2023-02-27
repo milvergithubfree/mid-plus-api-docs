@@ -1,0 +1,46 @@
+_id: req_73290bdc38744d0aab0395053a1d5329
+type: Request
+parentId: fld_d374a29076a34af3bc4bdba7f360d74b
+modified: 1677534358190
+created: 1677531834114
+url: "{{ _.DOMAIN }}/api/v4/immigrations/pdf?docNumber={% response 'body',
+  'req_10376b7ad5ad4a04ad9fafd86a5a7055',
+  'b64::JC5wZXJzb25hbERhdGEuZG9jTnVtYmVy::46b', 'never', 60 %}"
+name: Get PDF Immigration Document
+description: >
+  Example of Request
+
+  ```json
+
+  {
+  	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60 %}",
+  	"travelDate": "2023-05-05T22:00:00",
+  	"tripNumber": "AWL-34567",
+  	"countryOfOrigin": {
+  		"id": 2,
+  		"code": "AI",
+  		"code3": "AIA",
+  		"name": "Anguila"
+  	},
+  	"countryOfDestination": {
+  		"id": 1,
+  		"code": "AR",
+  		"code3": "ARG",
+  		"name": "Argentina"
+  	}
+  }
+
+  ```
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1675790541061.0938
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
