@@ -1,36 +1,17 @@
 _id: req_73290bdc38744d0aab0395053a1d5329
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1677677823284
+modified: 1677678517704
 created: 1677531834114
 url: "{{ _.DOMAIN }}/api/v4/immigrations/pdf/{% response 'body',
   'req_8b013c46d9d242b3b7e6bcdfd66c4ec2', 'b64::JC5qb3VybmV5c1swXS5pZA==::46b',
   'never', 60 %}"
 name: Get PDF Immigration Document
 description: >
-  Example of Request
+  {{ _.DOMAIN }}/api/v4/immigrations/pdf/{travelId}
 
-  ```json
 
-  {
-  	"journeyId": "{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60 %}",
-  	"travelDate": "2023-05-05T22:00:00",
-  	"tripNumber": "AWL-34567",
-  	"countryOfOrigin": {
-  		"id": 2,
-  		"code": "AI",
-  		"code3": "AIA",
-  		"name": "Anguila"
-  	},
-  	"countryOfDestination": {
-  		"id": 1,
-  		"code": "AR",
-  		"code3": "ARG",
-  		"name": "Argentina"
-  	}
-  }
-
-  ```
+  {{ _.DOMAIN }}/api/v4/immigrations/pdf/{% response 'body', 'req_8b013c46d9d242b3b7e6bcdfd66c4ec2', 'b64::JC5qb3VybmV5c1swXS5pZA==::46b', 'never', 60 %}
 method: GET
 body: {}
 parameters: []

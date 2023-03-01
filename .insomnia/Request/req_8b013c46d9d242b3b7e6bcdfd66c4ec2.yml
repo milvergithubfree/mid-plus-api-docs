@@ -1,7 +1,7 @@
 _id: req_8b013c46d9d242b3b7e6bcdfd66c4ec2
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1676549170600
+modified: 1677678555514
 created: 1676416807416
 url: "{{ _.DOMAIN }}/api/v4/journeys/{% response 'body',
   'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60
@@ -15,6 +15,75 @@ description: >-
 
 
   {{ _.DOMAIN }}/api/v4/journeys/{% response 'body', 'req_3d546f74784144ac860a9dad8c0c07f0', 'b64::JC5bMF0uaWQ=::46b', 'never', 60 %}
+
+
+  Example Response:
+
+
+  ```json
+
+  {
+  	"journeyId": "833fa931-304b-496b-83cc-428d7a8d1c14",
+  	"surname": "surname",
+  	"givenName": "givenName",
+  	"nationality": "BOL",
+  	"docNumber": "20230228-DOC-02",
+  	"dateOfBirth": "2000-09-09",
+  	"dateOfExpire": "2026-09-09",
+  	"mrz": "<-wfsdffdgdfgfdgkfughdfkgfduhg",
+  	"docType": "PSP",
+  	"docFrontImage": "base64Image",
+  	"docBackImage": "base64Image",
+  	"photoImage": "base64Image",
+  	"gender": "M",
+  	"nationalId": "123456",
+  	"journeys": [
+  		{
+  			"id": 1,
+  			"travelDate": "2023-05-05T22:00:00",
+  			"tripNumber": "AWL-34567",
+  			"countryOfOrigin": {
+  				"id": 258,
+  				"code": "AI",
+  				"code3": "AIA",
+  				"name": "Anguila"
+  			},
+  			"countryOfDestination": {
+  				"id": 261,
+  				"code": "AR",
+  				"code3": "ARG",
+  				"name": "Argentina"
+  			},
+  			"country": null,
+  			"seamlessTravel": {
+  				"id": "833fa931-304b-496b-83cc-428d7a8d1c14",
+  				"email": "milverapp@gmail.com",
+  				"stepStatus": "TRIP",
+  				"createdTime": "2023-03-01T00:15:46",
+  				"lastModifiedTime": "2023-03-01T00:16:05"
+  			},
+  			"createdTime": "2023-03-01T00:16:27",
+  			"lastModifiedTime": "2023-03-01T00:16:27",
+  			"immigrationDocument": {
+  				"id": 1,
+  				"countryOfResidence": {
+  					"id": 251,
+  					"code": "AF",
+  					"code3": "AFG",
+  					"name": "Afghanistan"
+  				},
+  				"propose": {
+  					"id": 1,
+  					"name": "Tourism"
+  				},
+  				"createdTime": "2023-03-01T00:16:28",
+  				"lastModifiedTime": "2023-03-01T00:16:28"
+  			}
+  		}
+  	]
+  }
+
+  ```
 method: GET
 body: {}
 parameters: []
