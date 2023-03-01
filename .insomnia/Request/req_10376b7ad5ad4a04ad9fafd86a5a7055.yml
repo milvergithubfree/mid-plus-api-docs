@@ -1,7 +1,7 @@
 _id: req_10376b7ad5ad4a04ad9fafd86a5a7055
 type: Request
 parentId: fld_d374a29076a34af3bc4bdba7f360d74b
-modified: 1677626367052
+modified: 1677629762007
 created: 1675913268821
 url: "{{ _.DOMAIN }}/api/v4/personalData"
 name: Personal Data Step
@@ -76,7 +76,7 @@ body:
     	"givenName": "givenName",
     	"surname": "surname",
     	"nationality": "BOL",
-    	"docNumber": "20230228-DOC-01",
+    	"docNumber": "20230228-DOC-02",
     	"dateOfBirth": "2000-09-09",
     	"dateOfExpire": "2026-09-09",
     	"mrz": "<-wfsdffdgdfgfdgkfughdfkgfduhg",
